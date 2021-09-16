@@ -1,8 +1,8 @@
 #!/bin/sh
-if [ -d '/home/cs1531/public_html/20T1/.npm' ]
-then
-  echo "prefix=/import/kamen/3/cs1531/public_html/20T1/.npm" > .npmrc
-fi
+# if [ -d '/home/cs1531/public_html/20T1/.npm' ]
+# then
+#   echo "prefix=/import/kamen/3/cs1531/public_html/20T1/.npm" > .npmrc
+# fi
 npm install
 npm link @date-io/moment
 npm link @material-ui/core

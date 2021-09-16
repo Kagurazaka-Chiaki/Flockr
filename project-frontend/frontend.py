@@ -10,6 +10,7 @@ if len(sys.argv) == 2:
 
 app = Flask(__name__, static_folder='prebundle')
 
+
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def serve(path):
@@ -20,6 +21,6 @@ def serve(path):
         print(app.static_folder, 'index.html')
         return send_from_directory(app.static_folder, 'index.html')
 
-if __name__ == '__main__':
-    app.run(port=0, threaded=True)
 
+if __name__ == '__main__':
+    app.run(port=8080, threaded=True)
